@@ -1,0 +1,28 @@
+/* SearchBar.css */
+
+/* SearchBar Container */
+.search-bar-container {
+    margin-bottom: 20px;
+}
+
+/* Search Input Styles */
+input[type="text"] {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    input[type="text"] {
+        font-size: 14px;
+    }
+}

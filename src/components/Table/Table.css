@@ -1,0 +1,87 @@
+.table-container {
+    overflow-x: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+th,
+td {
+    padding: 8px 11px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    font-weight: bold;
+    color: #333333;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    border: none;
+    color: blue;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: red;
+}
+
+.edit-button:hover {
+    color: green
+}
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        display: block;
+        text-align: right;
+    }
+
+    th {
+        text-align: right;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .table-actions {
+        width: 100;
+    }
+
+    .table-actions button {
+        margin: 2px;
+    }
+}
